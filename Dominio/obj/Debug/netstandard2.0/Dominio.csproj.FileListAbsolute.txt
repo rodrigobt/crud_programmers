@@ -1,0 +1,9 @@
+/Users/rodrigoassis/Documents/MyProjects/CRUD/Dominio/bin/Debug/netstandard2.0/Dominio.deps.json
+/Users/rodrigoassis/Documents/MyProjects/CRUD/Dominio/bin/Debug/netstandard2.0/Dominio.dll
+/Users/rodrigoassis/Documents/MyProjects/CRUD/Dominio/bin/Debug/netstandard2.0/Dominio.pdb
+/Users/rodrigoassis/Documents/MyProjects/CRUD/Dominio/obj/Debug/netstandard2.0/Dominio.csproj.CoreCompileInputs.cache
+/Users/rodrigoassis/Documents/MyProjects/CRUD/Dominio/obj/Debug/netstandard2.0/Dominio.AssemblyInfoInputs.cache
+/Users/rodrigoassis/Documents/MyProjects/CRUD/Dominio/obj/Debug/netstandard2.0/Dominio.AssemblyInfo.cs
+/Users/rodrigoassis/Documents/MyProjects/CRUD/Dominio/obj/Debug/netstandard2.0/Dominio.dll
+/Users/rodrigoassis/Documents/MyProjects/CRUD/Dominio/obj/Debug/netstandard2.0/Dominio.pdb
+/Users/rodrigoassis/Documents/MyProjects/CRUD/Dominio/obj/Debug/netstandard2.0/Dominio.csprojAssemblyReference.cache
