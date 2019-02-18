@@ -1,0 +1,41 @@
+@model IEnumerable<Dominio.Entidades.Pessoa>
+
+
+
+    
+   
+        <a href="/Pessoa/Salvar" class="btn">
+            <i class="fas fa-user-plus icon-add"></i>
+        </a>
+    
+    <div class="row div-pessoas">
+        <div class="col-md-12">
+            <table class="table table-hover">
+                <thead class="tbl-head">
+                    <tr>
+                        <th class="tbl-text">Nome</th>
+                        <th class="tbl-text">Email</th>
+                        <th class="tbl-text">Telefone</th>
+                        <th class="tbl-text"></th>
+                        <th class="tbl-text"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Nome</td>
+                            <td>@item.Email</td>
+                            <td>@item.Telefone</td>
+                            <td>
+                                <a href="/Pessoa/Editar/@item.Id" class="btn"><i class="fas fa-edit icon-edit"></i></a>
+                            </td>
+                            <td>
+                                <a href="/Pessoa/Deletar/@item.Id" class="btn"><i class="fas fa-trash-alt icon-delete"></i></a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>

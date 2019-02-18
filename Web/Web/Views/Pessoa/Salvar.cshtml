@@ -1,0 +1,38 @@
+@model Dominio.Entidades.Pessoa
+
+<h2>Cadastrar Pessoa</h2>
+
+<form class="form-horizontal form-pessoa" asp-action="Salvar" asp-controller="Pessoa" method="POST">
+
+    <input type="hidden" class="form-control" asp-for="Id">
+    <div class="form-group">
+        <label class="col-md-1 control-label" for="Name">Nome</label>
+        <div class="col-md-6">
+            <input type="text" class="form-control" asp-for="Nome">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-1 control-label" for="Name">Email</label>
+        <div class="col-md-3">
+            <input type="text" class="form-control" asp-for="Email">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-1 control-label" for="Name">Telefone</label>
+        <div class="col-md-3">
+            <input type="text" class="form-control" asp-for="Telefone">
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-2">
+            <button class="btn btn-success btn-salvar-pessoa">Salvar</button>
+        </div>
+    </div>
+</form>
+
+<link rel="stylesheet" href="~/css/pessoa.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://unpkg.com/jquery-input-mask-phone-number@1.0.4/dist/jquery-input-mask-phone-number.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+<script type="text/javascript" src="~/js/pessoa.js"></script>

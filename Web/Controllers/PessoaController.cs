@@ -1,6 +1,7 @@
 using System.Linq;
 using Dados;
 using Dominio.Entidades;
+using Dados.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,31 +9,29 @@ namespace Web.Controllers
 {
     public class PessoaController : Controller
     {
-        private readonly ApplicationDbContext _contexto;
+        //private readonly ApplicationDbContext _contexto;
+        private readonly IPessoaRepository _repository;
 
-        public PessoaController(ApplicationDbContext contexto)
+        public PessoaController(IPessoaRepository repository)
         {
-            _contexto = contexto;
+            _repository = repository;
         }
 
         public IActionResult Index()
         {
-            var pessoas = _contexto.Pessoas.ToList();
+            var pessoas = _repository.GetAll();
             return View(pessoas);
         }
 
         public IActionResult Editar(int id)
         {
-            var pessoa = _contexto.Pessoas.First(x => x.Id == id);
+            var pessoa = _repository.Edit(id);
             return View("Salvar", pessoa);
         }
 
         public IActionResult Deletar(int id)
         {
-            var pessoa = _contexto.Pessoas.First(x => x.Id == id);
-            _contexto.Pessoas.Remove(pessoa);
-            _contexto.SaveChanges();
-
+            _repository.Delete(id);
             return RedirectToAction("Index");
         }
 
@@ -47,19 +46,7 @@ namespace Web.Controllers
         {   
             if(!VerificaEmailExiste(model.Email))
             {
-                if(model.Id == 0)
-                {
-                    _contexto.Pessoas.Add(model);
-                }
-                else
-                {
-                    var pessoa = _contexto.Pessoas.First(x => x.Id == model.Id);
-                    pessoa.Nome = model.Nome;
-                    pessoa.Email = model.Email;
-                    pessoa.Telefone = model.Telefone;
-                }
-
-                _contexto.SaveChanges();
+                _repository.Create(model);
                 return RedirectToAction("Index");
             }
 
@@ -68,7 +55,7 @@ namespace Web.Controllers
 
         public bool VerificaEmailExiste(string email)
         {
-            bool existe = _contexto.Pessoas.Where(x => x.Email.ToUpper().Equals(email.ToUpper())).Count() > 1;
+            bool existe = _repository.GetAll().Where(x => x.Email.ToUpper().Equals(email.ToUpper())).Count() >= 1;
 
             return existe;
         }

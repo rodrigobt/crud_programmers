@@ -1,12 +1,12 @@
+/Users/rodrigoassis/Documents/MyProjects/CRUD/Dados/obj/Debug/netstandard2.0/Dados.csprojAssemblyReference.cache
+/Users/rodrigoassis/Documents/MyProjects/CRUD/Dados/obj/Debug/netstandard2.0/Dados.csproj.CoreCompileInputs.cache
+/Users/rodrigoassis/Documents/MyProjects/CRUD/Dados/obj/Debug/netstandard2.0/Dados.AssemblyInfoInputs.cache
+/Users/rodrigoassis/Documents/MyProjects/CRUD/Dados/obj/Debug/netstandard2.0/Dados.AssemblyInfo.cs
 /Users/rodrigoassis/Documents/MyProjects/CRUD/Dados/bin/Debug/netstandard2.0/Dados.deps.json
 /Users/rodrigoassis/Documents/MyProjects/CRUD/Dados/bin/Debug/netstandard2.0/Dados.dll
 /Users/rodrigoassis/Documents/MyProjects/CRUD/Dados/bin/Debug/netstandard2.0/Dados.pdb
 /Users/rodrigoassis/Documents/MyProjects/CRUD/Dados/bin/Debug/netstandard2.0/Dominio.dll
 /Users/rodrigoassis/Documents/MyProjects/CRUD/Dados/bin/Debug/netstandard2.0/Dominio.pdb
-/Users/rodrigoassis/Documents/MyProjects/CRUD/Dados/obj/Debug/netstandard2.0/Dados.csprojAssemblyReference.cache
-/Users/rodrigoassis/Documents/MyProjects/CRUD/Dados/obj/Debug/netstandard2.0/Dados.csproj.CoreCompileInputs.cache
-/Users/rodrigoassis/Documents/MyProjects/CRUD/Dados/obj/Debug/netstandard2.0/Dados.AssemblyInfoInputs.cache
-/Users/rodrigoassis/Documents/MyProjects/CRUD/Dados/obj/Debug/netstandard2.0/Dados.AssemblyInfo.cs
 /Users/rodrigoassis/Documents/MyProjects/CRUD/Dados/obj/Debug/netstandard2.0/Dados.csproj.CopyComplete
 /Users/rodrigoassis/Documents/MyProjects/CRUD/Dados/obj/Debug/netstandard2.0/Dados.dll
 /Users/rodrigoassis/Documents/MyProjects/CRUD/Dados/obj/Debug/netstandard2.0/Dados.pdb
